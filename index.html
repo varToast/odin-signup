@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screenarea">
+        <div class="leftmast">
+            <img src="toast.jpg">
+            <div class="logo">
+                TOAST
+            </div>
+        </div>
+        <div class="rightmast">
+            <div class="mastsection">
+                <span> Warning! You have unsaved changes!</span>
+            </div>
+                <div class="mastsection">
+                    <div class="formsection">
+                    <h3 style="padding-left:10px">Let's do this!</h3>
+                        <form action="https://httpbin.org/post" method="post">
+                            <div class="formgrid">
+                                <div class="formcolumn">
+                                <label for="firstname">First Name:</label>
+                                <input type="text" id="firstname" name="firstname">
+                                <label for="useremail">Email Address:</label>
+                                <input type="email" id="useremail" name="email" placeholder="you@example.com">
+                                <label for="userpass">Password:</label>
+                                <input type="password" minlength="8" maxlength="24"  id="userpass" name="password">
+                                </div>
+
+                                <div class="formcolumn">
+                                <label for="lastname">Last Name:</label>
+                                <input type="text" id="lastname" name="lastname">
+                                <label for="usertel">Phone Number:</label>
+                                <input type="tel" id="usertel" name="telephone">
+                                <label for="userpass2">Confirm Password:</label>
+                                <input type="password" minlength="8" maxlength="24" id="userpass2" name="password">
+                                </div>
+                            </div>
+                        
+                        <button type="submit">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            <div class="mastsection"></div>
+        </div>
+    </div>
+</body>
+</html>

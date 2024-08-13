@@ -1,0 +1,85 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.screenarea{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.leftmast{
+    height: 100vh;
+    display: flex;
+    flex: 1 0 40vw;
+    background-color: coral;
+}
+.leftmast img{
+    flex: 1 1 auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+.leftmast > .logo{
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 100px;
+    width: 40vw;
+    z-index: 2;
+    float: right;
+    position: absolute;
+    top: calc(30vh - 30px);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.rightmast{
+    height: 100vh;
+    display: flex;
+    flex: 1 1 60vw;
+    background-color: lavender;
+    flex-direction: column;
+    justify-content: center;
+}
+.mastsection{
+    display: flex;
+    flex: 0 1 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.formgrid{
+    display:flex;
+    flex-direction:row;
+
+}
+.formsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formcolumn{
+    display:flex;
+    flex-direction:column;
+    padding: 10px;
+}
+.formcolumn>label{
+    font-size: 14px;
+    padding-top: 8px;
+}
+.formcolumn>input{
+    font-size: 18px;
+    padding: 4px;
+}
+form>button{
+    margin: 8px;
+}
+.formcolumn>input:invalid{
+    border-color: red;
+}
